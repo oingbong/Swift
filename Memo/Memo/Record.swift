@@ -16,11 +16,14 @@ class Record: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        RecordTextView.text = "Hello World"
+        // as! String! 을 추가하여 문자라는 표현을 추가합니다.
+        // as! 무조건 값이 있으며 String, as? 값이 있으면 String 없으면 공란
+        RecordTextView.text = UserDefaults.standard.object(forKey: "0") as? String
     }
 
     @IBAction func Save(_ sender: Any) {
-        RecordTextView.text = "Bye World"
+        // 1: 저장할 값 , 2: 해당 저장 이름
+        UserDefaults.standard.set(RecordTextView.text, forKey: "0")
     }
     
     override func didReceiveMemoryWarning() {

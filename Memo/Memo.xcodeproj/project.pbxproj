@@ -99,13 +99,13 @@
 		6082FB9C1F26400000CEE653 /* Memo */ = {
 			isa = PBXGroup;
 			children = (
+				6082FBA11F26400000CEE653 /* Main.storyboard */,
 				6082FB9D1F26400000CEE653 /* AppDelegate.swift */,
 				6082FB9F1F26400000CEE653 /* Main.swift */,
-				6082FBA11F26400000CEE653 /* Main.storyboard */,
+				6082FBCB1F26427D00CEE653 /* Record.swift */,
 				6082FBA41F26400000CEE653 /* Assets.xcassets */,
 				6082FBA61F26400000CEE653 /* LaunchScreen.storyboard */,
 				6082FBA91F26400000CEE653 /* Info.plist */,
-				6082FBCB1F26427D00CEE653 /* Record.swift */,
 			);
 			path = Memo;
 			sourceTree = "<group>";
@@ -516,6 +516,7 @@
 				6082FBC41F26400000CEE653 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6082FBC51F26400000CEE653 /* Build configuration list for PBXNativeTarget "MemoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +525,7 @@
 				6082FBC71F26400000CEE653 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6082FBC81F26400000CEE653 /* Build configuration list for PBXNativeTarget "MemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +534,7 @@
 				6082FBCA1F26400000CEE653 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
