@@ -15,6 +15,7 @@
 		6082FBB31F26400000CEE653 /* MemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6082FBB21F26400000CEE653 /* MemoTests.swift */; };
 		6082FBBE1F26400000CEE653 /* MemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6082FBBD1F26400000CEE653 /* MemoUITests.swift */; };
 		6082FBCC1F26427D00CEE653 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6082FBCB1F26427D00CEE653 /* Record.swift */; };
+		6082FBCE1F29606200CEE653 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6082FBCD1F29606200CEE653 /* MainCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		6082FBBD1F26400000CEE653 /* MemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoUITests.swift; sourceTree = "<group>"; };
 		6082FBBF1F26400000CEE653 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6082FBCB1F26427D00CEE653 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		6082FBCD1F29606200CEE653 /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				6082FBA11F26400000CEE653 /* Main.storyboard */,
 				6082FB9D1F26400000CEE653 /* AppDelegate.swift */,
 				6082FB9F1F26400000CEE653 /* Main.swift */,
+				6082FBCD1F29606200CEE653 /* MainCell.swift */,
 				6082FBCB1F26427D00CEE653 /* Record.swift */,
 				6082FBA41F26400000CEE653 /* Assets.xcassets */,
 				6082FBA61F26400000CEE653 /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 			files = (
 				6082FBA01F26400000CEE653 /* Main.swift in Sources */,
 				6082FB9E1F26400000CEE653 /* AppDelegate.swift in Sources */,
+				6082FBCE1F29606200CEE653 /* MainCell.swift in Sources */,
 				6082FBCC1F26427D00CEE653 /* Record.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
