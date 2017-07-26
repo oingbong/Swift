@@ -10,6 +10,8 @@ import UIKit
 
 class Main: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var MemoData = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,7 +20,9 @@ class Main: UIViewController, UITableViewDelegate, UITableViewDataSource {
     // 셀 갯수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 20
+        MemoData = UserDefaults.standard.object(forKey: "MemoData") as? [String] ?? [String]()
+        
+        return MemoData.count
     }
     
     // 꾸며주는 부분
@@ -31,7 +35,11 @@ class Main: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // Cell 클릭했을 때
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("ABCD")
+        
+        let MemoNumber = indexPath.row
+        UserDefaults.standard.set(MemoNumber, forKey: "MemoNumber")
+        
+        self.performSegue(withIdentifier: "ToRecord", sender: self)
     }
 }
 

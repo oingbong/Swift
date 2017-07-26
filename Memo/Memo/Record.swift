@@ -10,20 +10,31 @@ import UIKit
 
 class Record: UIViewController {
     @IBOutlet weak var RecordTextView: UITextView!
+    
+    var MemoData = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        MemoData = UserDefaults.standard.object(forKey: "MemoData") as? [String] ?? [String]()
         
-        // as! String! 을 추가하여 문자라는 표현을 추가합니다.
-        // as! 무조건 값이 있으며 String, as? 값이 있으면 String 없으면 공란
-        RecordTextView.text = UserDefaults.standard.object(forKey: "0") as? String
+        if MemoData.count == 0{
+            RecordTextView.text = "..."
+        }else{
+            
+            let MemoNumber = UserDefaults.standard.object(forKey: "MemoNumber") as! Int
+            
+            RecordTextView.text = MemoData[MemoNumber]
+        }
     }
 
     @IBAction func Save(_ sender: Any) {
+        // 내용 저장
+        MemoData.insert(RecordTextView.text, at: 0)
+        
+        // 어플을 다시 실행해도 저장
         // 1: 저장할 값 , 2: 해당 저장 이름
-        UserDefaults.standard.set(RecordTextView.text, forKey: "0")
+        UserDefaults.standard.set(MemoData, forKey: "MemoData")
     }
     
     override func didReceiveMemoryWarning() {
