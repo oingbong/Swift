@@ -11,16 +11,21 @@ class Main: UIViewController, UICollectionViewDelegate, UICollectionViewDataSour
     
 // MARK: - UICollectionView
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let Cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! MainCell
         
-        let TitleImage = UIImage(named: "2.jpg")
+        // for Label and Connect Supporting File
+        let Cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! MainCell
+        Cell.TitleLabel.text = Data[indexPath.row]["TitleLabel"]
+        
+        // for Image and Connect Supporting File
+        let TitleImageName = Data[indexPath.row]["TitleImage"]
+        let TitleImage = UIImage(named: TitleImageName!)
         Cell.TitleImageView.image = TitleImage
         
-        Cell.TitleLabel.text = Data[indexPath.row]["TitleLabel"]
+
         
         return Cell
     }
