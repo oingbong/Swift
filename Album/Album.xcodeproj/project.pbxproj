@@ -15,6 +15,7 @@
 		601E37261F2F6EE300B46C7D /* AlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601E37251F2F6EE300B46C7D /* AlbumTests.swift */; };
 		601E37311F2F6EE300B46C7D /* AlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601E37301F2F6EE300B46C7D /* AlbumUITests.swift */; };
 		60A3FC071F306C0800E6855A /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A3FC061F306C0800E6855A /* MainCell.swift */; };
+		60A3FC091F306D0500E6855A /* Supporting File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A3FC081F306D0500E6855A /* Supporting File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		601E37301F2F6EE300B46C7D /* AlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumUITests.swift; sourceTree = "<group>"; };
 		601E37321F2F6EE300B46C7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60A3FC061F306C0800E6855A /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		60A3FC081F306D0500E6855A /* Supporting File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Supporting File.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +103,8 @@
 			children = (
 				601E37141F2F6EE300B46C7D /* Main.storyboard */,
 				601E37101F2F6EE300B46C7D /* AppDelegate.swift */,
-				601E37121F2F6EE300B46C7D /* Main.swift */,
-				60A3FC061F306C0800E6855A /* MainCell.swift */,
+				60A3FC0B1F306DEE00E6855A /* Main */,
+				60A3FC0A1F306DDF00E6855A /* SupportingFile */,
 				601E37171F2F6EE300B46C7D /* Assets.xcassets */,
 				601E37191F2F6EE300B46C7D /* LaunchScreen.storyboard */,
 				601E371C1F2F6EE300B46C7D /* Info.plist */,
@@ -126,6 +128,23 @@
 				601E37321F2F6EE300B46C7D /* Info.plist */,
 			);
 			path = AlbumUITests;
+			sourceTree = "<group>";
+		};
+		60A3FC0A1F306DDF00E6855A /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				60A3FC081F306D0500E6855A /* Supporting File.swift */,
+			);
+			name = SupportingFile;
+			sourceTree = "<group>";
+		};
+		60A3FC0B1F306DEE00E6855A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				601E37121F2F6EE300B46C7D /* Main.swift */,
+				60A3FC061F306C0800E6855A /* MainCell.swift */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +287,7 @@
 				601E37131F2F6EE300B46C7D /* Main.swift in Sources */,
 				601E37111F2F6EE300B46C7D /* AppDelegate.swift in Sources */,
 				60A3FC071F306C0800E6855A /* MainCell.swift in Sources */,
+				60A3FC091F306D0500E6855A /* Supporting File.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,13 +11,13 @@ class Main: UIViewController, UICollectionViewDelegate, UICollectionViewDataSour
     
 // MARK: - UICollectionView
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let Cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! MainCell
         
-        Cell.TitleLabel.text = "123456"
+        Cell.TitleLabel.text = Data[indexPath.row]["TitleLabel"]
         
         return Cell
     }
