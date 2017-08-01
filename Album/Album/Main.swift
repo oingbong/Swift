@@ -17,6 +17,9 @@ class Main: UIViewController, UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let Cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! MainCell
         
+        let TitleImage = UIImage(named: "2.jpg")
+        Cell.TitleImageView.image = TitleImage
+        
         Cell.TitleLabel.text = Data[indexPath.row]["TitleLabel"]
         
         return Cell
