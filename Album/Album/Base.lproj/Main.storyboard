@@ -68,10 +68,31 @@
                         </subviews>
                         <color key="backgroundColor" red="0.37647058820000001" green="0.56078431370000004" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="Okz-kL-WLb" kind="show" identifier="ToDashBoard" id="395-ke-7oF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ar8-nz-Vuk">
+            <objects>
+                <viewController id="Okz-kL-WLb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eYz-Jj-0kB"/>
+                        <viewControllerLayoutGuide type="bottom" id="wSF-d5-LBG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iGn-Le-leF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxn-iH-UKq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="122"/>
         </scene>
     </scenes>
     <resources>

@@ -31,7 +31,7 @@ class Main: UIViewController, UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
-        print("Cell")
+        self.performSegue(withIdentifier: "ToDashBoard", sender: self)
     }
 // CollectionView_End
 }
