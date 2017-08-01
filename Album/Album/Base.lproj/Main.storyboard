@@ -32,7 +32,7 @@
                                     <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="afU-iZ-xvj">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="afU-iZ-xvj" customClass="MainCell" customModule="Album" customModuleProvider="target">
                                         <rect key="frame" x="10" y="0.0" width="170" height="170"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -54,6 +54,10 @@
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="0.83137254900000002" green="0.7725490196" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="TitleImage" destination="QVF-Hb-TIN" id="UVX-1a-g1A"/>
+                                            <outlet property="TitleLabel" destination="ppQ-fz-iWj" id="lpb-JY-3Pb"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>

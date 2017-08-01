@@ -15,7 +15,10 @@ class Main: UIViewController, UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let Cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        let Cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! MainCell
+        
+        Cell.TitleLabel.text = "123456"
+        
         return Cell
     }
     
