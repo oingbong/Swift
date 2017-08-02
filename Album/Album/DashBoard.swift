@@ -20,11 +20,11 @@ class DashBoard: UIViewController {
                 하위(PageViewController)에 있는 VC의 명령어 및 기능까지 상위(PageView)로 다 가져오겠다는 의미
          */
         
-        let PageViewVC = self.storyboard?.instantiateViewController(withIdentifier: "PageViewVC") as! PageView // 1
-        PageViewVC.view.frame = PageView.bounds // 2
-        PageView.addSubview(PageViewVC.view) // 3
-        addChildViewController(PageViewVC) // 4
-        PageViewVC.didMove(toParentViewController: self) // 5
+        let PageVC = self.storyboard?.instantiateViewController(withIdentifier: "PageVC") as! UIPageViewController // 1
+        PageVC.view.frame = PageView.bounds // 2
+        PageView.addSubview(PageVC.view) // 3
+        addChildViewController(PageVC) // 4
+        PageVC.didMove(toParentViewController: self) // 5
     }
 
 }
