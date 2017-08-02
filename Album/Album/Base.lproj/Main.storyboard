@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="1878" y="122"/>
         </scene>
-        <!--View Controller-->
+        <!--Content-->
         <scene sceneID="azf-cz-u1V">
             <objects>
-                <viewController id="dja-Pc-Y6A" sceneMemberID="viewController">
+                <viewController id="dja-Pc-Y6A" customClass="Content" customModule="Album" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rA6-kf-697"/>
                         <viewControllerLayoutGuide type="bottom" id="HeI-ew-SCT"/>
@@ -131,12 +131,29 @@
                     <view key="view" contentMode="scaleToFill" id="DxD-nT-zyR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vry-7J-v9K">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="319"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mq7-Sb-wtw">
+                                <rect key="frame" x="0.0" y="327" width="375" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="ContentImageView" destination="vry-7J-v9K" id="abZ-jC-EPL"/>
+                        <outlet property="ContentLabel" destination="mq7-Sb-wtw" id="MHd-7e-gaO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HTP-ko-m1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2714" y="122"/>
+            <point key="canvasLocation" x="2712.8000000000002" y="121.88905547226388"/>
         </scene>
     </scenes>
     <resources>
