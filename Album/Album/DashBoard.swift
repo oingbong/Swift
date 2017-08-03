@@ -36,11 +36,18 @@ class DashBoard: UIViewController {
 
 // MARK : - Page View
     func ContentVCIndex(index: Int) -> Content {
+        
+        if ContentTextData.count == 0 || index >= ContentTextData.count{
+            return Content()
+        }
+        
         let ContentVC = self.storyboard?.instantiateViewController(withIdentifier: "ContentVC") as! Content
         
         ContentVC.PageIndex = index
         ContentVC.ContentImage = ContentImageData[index] as! String
         ContentVC.ContentText = ContentTextData[index] as! String
+        
+        return ContentVC
     }
 // Page View_End
     
