@@ -123,7 +123,7 @@
         <!--Content-->
         <scene sceneID="azf-cz-u1V">
             <objects>
-                <viewController id="dja-Pc-Y6A" customClass="Content" customModule="Album" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContentVC" id="dja-Pc-Y6A" customClass="Content" customModule="Album" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rA6-kf-697"/>
                         <viewControllerLayoutGuide type="bottom" id="HeI-ew-SCT"/>

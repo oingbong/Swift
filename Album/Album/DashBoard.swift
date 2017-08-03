@@ -5,11 +5,18 @@ class DashBoard: UIViewController {
     
 // MARK: - Variable
     @IBOutlet weak var PageView: UIView!
-// Variable_End
     
+    var ContentImageData = NSArray()
+    var ContentTextData = NSArray()
+// Variable_End
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Data //
+        ContentImageData = ["1-1.jpg", "1-2.jpg", "1-3.jpg"]
+        ContentTextData = ["1 Page", "2 Page", "3 Page"]
+        
 
         /*
             1. storyBaord 에 있는 PageViewVC 라는 id 가진 것을 가져옵니다.
@@ -27,4 +34,14 @@ class DashBoard: UIViewController {
         PageVC.didMove(toParentViewController: self) // 5
     }
 
+// MARK : - Page View
+    func ContentVCIndex(index: Int) -> Content {
+        let ContentVC = self.storyboard?.instantiateViewController(withIdentifier: "ContentVC") as! Content
+        
+        ContentVC.PageIndex = index
+        ContentVC.ContentImage = ContentImageData[index] as! String
+        ContentVC.ContentText = ContentTextData[index] as! String
+    }
+// Page View_End
+    
 }
