@@ -1,6 +1,6 @@
 import UIKit
 
-class DashBoard: UIViewController {
+class DashBoard: UIViewController, UIPageViewControllerDataSource {
     
     
 // MARK: - Variable
@@ -48,6 +48,42 @@ class DashBoard: UIViewController {
         ContentVC.ContentText = ContentTextData[index] as! String
         
         return ContentVC
+    }
+    
+    // 현재 페이지에서 이전화면 처리
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        
+        let ContentVC = viewController as! Content
+        var PageIndex = ContentVC.PageIndex as Int
+        
+        // 오류방지
+        if PageIndex == 0 || PageIndex == NSNotFound {
+            return nil // 아무것도 하지 않습니다.
+        }
+        
+        PageIndex -= 1 // 이전화면이므로 인덱스값을 1 줄입니다
+        
+        return ContentVCIndex(index: PageIndex)
+    }
+    
+    // 현재 페이지에서 이후화면 처리
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        let ContentVC = viewController as! Content
+        var PageIndex = ContentVC.PageIndex as Int
+        
+        // 오류방지
+        if PageIndex == NSNotFound {
+            return nil
+        }
+        
+        PageIndex += 1
+        
+        // 마지막 화면인 경우
+        if PageIndex == ContentTextData.count {
+            return nil
+        }
+        
+        return ContentVCIndex(index: PageIndex)
     }
 // Page View_End
     
