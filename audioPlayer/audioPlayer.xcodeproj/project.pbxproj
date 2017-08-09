@@ -14,6 +14,8 @@
 		603C02561F3BD46D0032875B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 603C02541F3BD46D0032875B /* LaunchScreen.storyboard */; };
 		603C02611F3BD46D0032875B /* audioPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603C02601F3BD46D0032875B /* audioPlayerTests.swift */; };
 		603C026C1F3BD46D0032875B /* audioPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603C026B1F3BD46D0032875B /* audioPlayerUITests.swift */; };
+		603C027A1F3BD56F0032875B /* Explosive_Ear_Candy-New_Life.png in Resources */ = {isa = PBXBuildFile; fileRef = 603C02791F3BD56F0032875B /* Explosive_Ear_Candy-New_Life.png */; };
+		603C027C1F3BD59E0032875B /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 603C027B1F3BD59E0032875B /* song.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		603C02671F3BD46D0032875B /* audioPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = audioPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		603C026B1F3BD46D0032875B /* audioPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioPlayerUITests.swift; sourceTree = "<group>"; };
 		603C026D1F3BD46D0032875B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		603C02791F3BD56F0032875B /* Explosive_Ear_Candy-New_Life.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Explosive_Ear_Candy-New_Life.png"; sourceTree = "<group>"; };
+		603C027B1F3BD59E0032875B /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				603C024B1F3BD46D0032875B /* AppDelegate.swift */,
 				603C024D1F3BD46D0032875B /* ViewController.swift */,
 				603C024F1F3BD46D0032875B /* Main.storyboard */,
+				603C02791F3BD56F0032875B /* Explosive_Ear_Candy-New_Life.png */,
+				603C027B1F3BD59E0032875B /* song.mp3 */,
 				603C02521F3BD46D0032875B /* Assets.xcassets */,
 				603C02541F3BD46D0032875B /* LaunchScreen.storyboard */,
 				603C02571F3BD46D0032875B /* Info.plist */,
@@ -236,7 +242,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				603C02561F3BD46D0032875B /* LaunchScreen.storyboard in Resources */,
+				603C027C1F3BD59E0032875B /* song.mp3 in Resources */,
 				603C02531F3BD46D0032875B /* Assets.xcassets in Resources */,
+				603C027A1F3BD56F0032875B /* Explosive_Ear_Candy-New_Life.png in Resources */,
 				603C02511F3BD46D0032875B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
