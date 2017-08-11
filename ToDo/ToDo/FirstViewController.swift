@@ -8,9 +8,10 @@
 
 import UIKit
 
+var list = ["Buy milk", "Run 5 mils", "Get Peter", "Plant my new plants"]
+
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var list = ["Buy milk", "Run 5 mils", "Get Peter", "Plant my new plants"]
 
     @IBOutlet weak var myTableView: UITableView!
     
@@ -28,9 +29,13 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     // Delete Cell
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
         if editingStyle == UITableViewCellEditingStyle.delete{
-            self.list.remove(at: indexPath.row)
+            list.remove(at: indexPath.row)
             myTableView.reloadData()
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        myTableView.reloadData()
     }
     
     override func viewDidLoad() {
