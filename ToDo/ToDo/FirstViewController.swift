@@ -25,6 +25,13 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return (cell)
     }
     
+    // Delete Cell
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+        if editingStyle == UITableViewCellEditingStyle.delete{
+            self.list.remove(at: indexPath.row)
+            myTableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
