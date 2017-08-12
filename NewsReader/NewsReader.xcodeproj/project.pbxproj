@@ -14,6 +14,7 @@
 		60871C951F3F66B1000B087E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60871C931F3F66B1000B087E /* LaunchScreen.storyboard */; };
 		60871CA01F3F66B1000B087E /* NewsReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60871C9F1F3F66B1000B087E /* NewsReaderTests.swift */; };
 		60871CAB1F3F66B2000B087E /* NewsReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60871CAA1F3F66B2000B087E /* NewsReaderUITests.swift */; };
+		60871CB91F3F6E40000B087E /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60871CB81F3F6E40000B087E /* ArticleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		60871CA61F3F66B2000B087E /* NewsReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60871CAA1F3F66B2000B087E /* NewsReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsReaderUITests.swift; sourceTree = "<group>"; };
 		60871CAC1F3F66B2000B087E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60871CB81F3F6E40000B087E /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				60871C911F3F66B1000B087E /* Assets.xcassets */,
 				60871C931F3F66B1000B087E /* LaunchScreen.storyboard */,
 				60871C961F3F66B1000B087E /* Info.plist */,
+				60871CB81F3F6E40000B087E /* ArticleCell.swift */,
 			);
 			path = NewsReader;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				60871C8D1F3F66B1000B087E /* ViewController.swift in Sources */,
 				60871C8B1F3F66B1000B087E /* AppDelegate.swift in Sources */,
+				60871CB91F3F6E40000B087E /* ArticleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
