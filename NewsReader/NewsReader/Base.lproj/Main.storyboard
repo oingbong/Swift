@@ -112,6 +112,9 @@
                             <constraint firstItem="kpo-ga-zEc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="xg3-AM-1lP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="GMa-cT-YX4" id="Iwl-UW-dUS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
