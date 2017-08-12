@@ -15,6 +15,7 @@
 		60871CA01F3F66B1000B087E /* NewsReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60871C9F1F3F66B1000B087E /* NewsReaderTests.swift */; };
 		60871CAB1F3F66B2000B087E /* NewsReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60871CAA1F3F66B2000B087E /* NewsReaderUITests.swift */; };
 		60871CB91F3F6E40000B087E /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60871CB81F3F6E40000B087E /* ArticleCell.swift */; };
+		60871CBB1F3F6FAF000B087E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60871CBA1F3F6FAF000B087E /* Article.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		60871CAA1F3F66B2000B087E /* NewsReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsReaderUITests.swift; sourceTree = "<group>"; };
 		60871CAC1F3F66B2000B087E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60871CB81F3F6E40000B087E /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		60871CBA1F3F6FAF000B087E /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				60871C931F3F66B1000B087E /* LaunchScreen.storyboard */,
 				60871C961F3F66B1000B087E /* Info.plist */,
 				60871CB81F3F6E40000B087E /* ArticleCell.swift */,
+				60871CBA1F3F6FAF000B087E /* Article.swift */,
 			);
 			path = NewsReader;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60871CBB1F3F6FAF000B087E /* Article.swift in Sources */,
 				60871C8D1F3F66B1000B087E /* ViewController.swift in Sources */,
 				60871C8B1F3F66B1000B087E /* AppDelegate.swift in Sources */,
 				60871CB91F3F6E40000B087E /* ArticleCell.swift in Sources */,
