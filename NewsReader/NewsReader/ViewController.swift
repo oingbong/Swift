@@ -69,6 +69,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.title.text = self.articles?[indexPath.item].headline
         cell.desc.text = self.articles?[indexPath.item].desc
         cell.author.text = self.articles?[indexPath.item].author
+        cell.imgView.downloadImage(from: (self.articles?[indexPath.item].imageUrl!)!)
         
         return cell
     }
@@ -81,5 +82,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return self.articles?.count ?? 0 // articles 가 있는 경우 count , 없는 경우 0 리턴
     }
 
+}
+
+
+extension UIImageView{
+    
+    func downloadImage(from url: String){
+        let urlRequest = URLRequest(url: URL(string: url)!)
+        
+        let task = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
+            
+            if error != nil {
+                print(error)
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.image = UIImage(data: data!)
+            }
+        }
+        
+        task.resume()
+        
+    }
+    
 }
 
