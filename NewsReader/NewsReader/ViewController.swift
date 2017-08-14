@@ -47,11 +47,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         self.articles?.append(article)
                     }
                 }
+                
+                // 메인 스레드 사용 (이유 ?)
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+                
             } catch let error {
                 print(error)
             }
             
         }
+        
+        task.resume()
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
