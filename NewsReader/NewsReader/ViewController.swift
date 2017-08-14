@@ -56,7 +56,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "articleCell", for: indexPath) as! ArticleCell
-        cell.title.text = "This is Test"
+        
+        cell.title.text = self.articles?[indexPath.item].headline
+        cell.desc.text = self.articles?[indexPath.item].desc
+        cell.author.text = self.articles?[indexPath.item].author
+        
         return cell
     }
     
@@ -65,7 +69,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return self.articles?.count ?? 0 // articles 가 있는 경우 count , 없는 경우 0 리턴
     }
 
 }
