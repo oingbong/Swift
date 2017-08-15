@@ -16,6 +16,7 @@
 		60871CAB1F3F66B2000B087E /* NewsReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60871CAA1F3F66B2000B087E /* NewsReaderUITests.swift */; };
 		60871CB91F3F6E40000B087E /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60871CB81F3F6E40000B087E /* ArticleCell.swift */; };
 		60871CBB1F3F6FAF000B087E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60871CBA1F3F6FAF000B087E /* Article.swift */; };
+		60871CBD1F433399000B087E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60871CBC1F433399000B087E /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		60871CAC1F3F66B2000B087E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60871CB81F3F6E40000B087E /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		60871CBA1F3F6FAF000B087E /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		60871CBC1F433399000B087E /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				60871C961F3F66B1000B087E /* Info.plist */,
 				60871CB81F3F6E40000B087E /* ArticleCell.swift */,
 				60871CBA1F3F6FAF000B087E /* Article.swift */,
+				60871CBC1F433399000B087E /* WebViewController.swift */,
 			);
 			path = NewsReader;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				60871CBB1F3F6FAF000B087E /* Article.swift in Sources */,
 				60871C8D1F3F66B1000B087E /* ViewController.swift in Sources */,
 				60871C8B1F3F66B1000B087E /* AppDelegate.swift in Sources */,
+				60871CBD1F433399000B087E /* WebViewController.swift in Sources */,
 				60871CB91F3F6E40000B087E /* ArticleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +524,7 @@
 				60871CB11F3F66B2000B087E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60871CB21F3F66B2000B087E /* Build configuration list for PBXNativeTarget "NewsReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +533,7 @@
 				60871CB41F3F66B2000B087E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60871CB51F3F66B2000B087E /* Build configuration list for PBXNativeTarget "NewsReaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +542,7 @@
 				60871CB71F3F66B2000B087E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
