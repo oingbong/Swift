@@ -81,6 +81,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.articles?.count ?? 0 // articles 가 있는 경우 count , 없는 경우 0 리턴
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let webVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "web") as! WebViewController
+        
+        webVC.url = self.articles?[indexPath.item].url // WebViewController.swift 에서 설정한 url 사용하는 것 입니다.
+        
+        self.present(webVC, animated: true, completion: nil)
+        
+    }
 
 }
 

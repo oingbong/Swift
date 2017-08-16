@@ -138,7 +138,7 @@
         <!--Web View Controller-->
         <scene sceneID="BTs-Cx-G0j">
             <objects>
-                <viewController id="Klh-oE-OWJ" customClass="WebViewController" customModule="NewsReader" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="web" id="Klh-oE-OWJ" customClass="WebViewController" customModule="NewsReader" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dya-XG-jAq"/>
                         <viewControllerLayoutGuide type="bottom" id="fNe-sn-wVg"/>
@@ -163,6 +163,9 @@
                                     <navigationItem title="News Reader" id="TdG-an-DZ4">
                                         <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="BZf-yc-MZg">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="fbr-Ks-iAt"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
