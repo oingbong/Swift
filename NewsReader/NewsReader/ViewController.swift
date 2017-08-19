@@ -13,14 +13,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     
     var articles: [Article]? = []
+    var source = "techcrunch"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchArticle()
+        
+        fetchArticle(fromSource: source)
     }
     
-    func fetchArticle(){
-        let urlRequest = URLRequest(url: URL(string:"https://newsapi.org/v1/articles?source=techcrunch&sortBy=top&apiKey=7eb2a61f124944b78b316ab112134a3c")!)
+    func fetchArticle(fromSource provider: String){
+        let urlRequest = URLRequest(url: URL(string:"https://newsapi.org/v1/articles?source=\(provider)&sortBy=top&apiKey=7eb2a61f124944b78b316ab112134a3c")!)
         
         let task = URLSession.shared.dataTask(with: urlRequest){ (data, response, error) in
             
@@ -93,6 +95,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let menuManager = MenuManager()
     @IBAction func menuPressed(_ sender: Any) {
         menuManager.openMenu()
+        menuManager.mainVC = self
     }
     
 
