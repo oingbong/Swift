@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		600C15A21F483B16008CA0D0 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600C15A11F483B16008CA0D0 /* MenuManager.swift */; };
 		60871C8B1F3F66B1000B087E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60871C8A1F3F66B1000B087E /* AppDelegate.swift */; };
 		60871C8D1F3F66B1000B087E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60871C8C1F3F66B1000B087E /* ViewController.swift */; };
 		60871C901F3F66B1000B087E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60871C8E1F3F66B1000B087E /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		600C15A11F483B16008CA0D0 /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
 		60871C871F3F66B1000B087E /* NewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60871C8A1F3F66B1000B087E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60871C8C1F3F66B1000B087E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				60871CB81F3F6E40000B087E /* ArticleCell.swift */,
 				60871CBA1F3F6FAF000B087E /* Article.swift */,
 				60871CBC1F433399000B087E /* WebViewController.swift */,
+				600C15A11F483B16008CA0D0 /* MenuManager.swift */,
 			);
 			path = NewsReader;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600C15A21F483B16008CA0D0 /* MenuManager.swift in Sources */,
 				60871CBB1F3F6FAF000B087E /* Article.swift in Sources */,
 				60871C8D1F3F66B1000B087E /* ViewController.swift in Sources */,
 				60871C8B1F3F66B1000B087E /* AppDelegate.swift in Sources */,

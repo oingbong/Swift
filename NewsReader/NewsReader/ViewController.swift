@@ -88,8 +88,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         webVC.url = self.articles?[indexPath.item].url // WebViewController.swift 에서 설정한 url 사용하는 것 입니다.
         
         self.present(webVC, animated: true, completion: nil)
-        
     }
+    
+    let menuManager = MenuManager()
+    @IBAction func menuPressed(_ sender: Any) {
+        menuManager.openMenu()
+    }
+    
 
 }
 
