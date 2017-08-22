@@ -1,0 +1,6 @@
+framework module Pods_CircularLoadingView {
+  umbrella header "Pods-CircularLoadingView-umbrella.h"
+
+  export *
+  module * { export * }
+}
