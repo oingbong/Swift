@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A285061C4553E50591A54F3 /* Pods_CircularLoadingViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C040C9D2E0E9F1CB7C200D1 /* Pods_CircularLoadingViewUITests.framework */; };
 		21CAFD09734029DD58E4FAAB /* Pods_CircularLoadingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C9537363A4D0CE54A867BE /* Pods_CircularLoadingView.framework */; };
+		60E9029D1F4D111C00B7D4AF /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9029C1F4D111C00B7D4AF /* CustomImageView.swift */; };
 		60F97F361F4C245900574AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F97F351F4C245900574AF0 /* AppDelegate.swift */; };
 		60F97F381F4C245900574AF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F97F371F4C245900574AF0 /* ViewController.swift */; };
 		60F97F3B1F4C245900574AF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F97F391F4C245900574AF0 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		1C040C9D2E0E9F1CB7C200D1 /* Pods_CircularLoadingViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircularLoadingViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E946DB6E9C34C83BD628926 /* Pods-CircularLoadingViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircularLoadingViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircularLoadingViewTests/Pods-CircularLoadingViewTests.release.xcconfig"; sourceTree = "<group>"; };
 		43DF8FE43E12156F8A2AE55E /* Pods-CircularLoadingView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircularLoadingView.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircularLoadingView/Pods-CircularLoadingView.release.xcconfig"; sourceTree = "<group>"; };
+		60E9029C1F4D111C00B7D4AF /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		60F97F321F4C245900574AF0 /* CircularLoadingView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircularLoadingView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60F97F351F4C245900574AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60F97F371F4C245900574AF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				60F97F3C1F4C245900574AF0 /* Assets.xcassets */,
 				60F97F3E1F4C245900574AF0 /* LaunchScreen.storyboard */,
 				60F97F411F4C245900574AF0 /* Info.plist */,
+				60E9029C1F4D111C00B7D4AF /* CustomImageView.swift */,
 			);
 			path = CircularLoadingView;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60F97F381F4C245900574AF0 /* ViewController.swift in Sources */,
+				60E9029D1F4D111C00B7D4AF /* CustomImageView.swift in Sources */,
 				60F97F361F4C245900574AF0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,6 +629,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4858738LMT;
 				INFOPLIST_FILE = CircularLoadingView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oingbong.CircularLoadingView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -640,6 +645,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4858738LMT;
 				INFOPLIST_FILE = CircularLoadingView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oingbong.CircularLoadingView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
