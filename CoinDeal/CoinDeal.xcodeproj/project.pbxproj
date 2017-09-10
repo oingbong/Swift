@@ -17,6 +17,7 @@
 		60BF8B1B1F52942800C61051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60BF8B191F52942800C61051 /* LaunchScreen.storyboard */; };
 		60BF8B261F52942800C61051 /* CoinDealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BF8B251F52942800C61051 /* CoinDealTests.swift */; };
 		60BF8B311F52942800C61051 /* CoinDealUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BF8B301F52942800C61051 /* CoinDealUITests.swift */; };
+		60D9318D1F650A3100DB2110 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D9318C1F650A3100DB2110 /* MainCell.swift */; };
 		9AA47A88CD42F9E2E7E3087D /* Pods_CoinDealTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D072BA5E2647ABA6CC5D8794 /* Pods_CoinDealTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		60BF8B2C1F52942800C61051 /* CoinDealUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinDealUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60BF8B301F52942800C61051 /* CoinDealUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDealUITests.swift; sourceTree = "<group>"; };
 		60BF8B321F52942800C61051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60D9318C1F650A3100DB2110 /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		AF2C162EF4120AB332825F0D /* Pods-CoinDealTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinDealTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinDealTests/Pods-CoinDealTests.release.xcconfig"; sourceTree = "<group>"; };
 		BBBA90344656D7C641C811B4 /* Pods_CoinDealUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinDealUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1303602243BB63C3AEC645C /* Pods-CoinDeal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinDeal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinDeal/Pods-CoinDeal.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				60BF8B171F52942800C61051 /* Assets.xcassets */,
 				60BF8B191F52942800C61051 /* LaunchScreen.storyboard */,
 				60BF8B1C1F52942800C61051 /* Info.plist */,
+				60D9318C1F650A3100DB2110 /* MainCell.swift */,
 			);
 			path = CoinDeal;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 			files = (
 				60BF8B131F52942800C61051 /* SecondViewController.swift in Sources */,
 				60BF8B0F1F52942800C61051 /* AppDelegate.swift in Sources */,
+				60D9318D1F650A3100DB2110 /* MainCell.swift in Sources */,
 				60BF8B111F52942800C61051 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -723,6 +727,7 @@
 				60BF8B371F52942800C61051 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60BF8B381F52942800C61051 /* Build configuration list for PBXNativeTarget "CoinDealTests" */ = {
 			isa = XCConfigurationList;
@@ -731,6 +736,7 @@
 				60BF8B3A1F52942800C61051 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60BF8B3B1F52942800C61051 /* Build configuration list for PBXNativeTarget "CoinDealUITests" */ = {
 			isa = XCConfigurationList;
@@ -739,6 +745,7 @@
 				60BF8B3D1F52942800C61051 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
