@@ -12,7 +12,8 @@ var list = ["AAA","BBB","CCC","DDD","EEE"]
 var listTitle : Array<String> = []
 var listAlbum : Array<String> = []
 var listSinger : Array<String> = []
-var listPhoto : Array<String> = []
+//var listPhoto : Array<String> = []
+var listPhoto : Array<Any> = []
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
@@ -30,6 +31,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.TitleLabel.text = listTitle[indexPath.row]
         cell.AlbumLabel.text = listAlbum[indexPath.row]
         cell.SingerLabel.text = listSinger[indexPath.row]
+        cell.PhotoImage.image = UIImage(data: listPhoto[indexPath.row] as! Data)
         
         return (cell)
     }
@@ -49,17 +51,22 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             //print(dicArray)
             //print(dicArray["title"]!)
             
+            var listUrl = Array<String>()
+            
             for info in arrayData{
                 var dic : [String:String] = info as! [String : String]
-                print("dic : \(dic["title"])")
-                print("dic : \(dic["album"])")
+//                print("dic : \(dic["title"])")
+//                print("dic : \(dic["album"])")
                 listTitle.append(dic["title"]!)
                 listAlbum.append(dic["album"]!)
                 listSinger.append(dic["singer"]!)
-                listPhoto.append(dic["photo"]!)
+                listUrl.append(dic["photo"]!)
                 
+                let url = NSURL(string: dic["photo"]!)
+                let photoData = try? Data(contentsOf: url! as URL)
+                listPhoto.append(photoData!)
             }
-            
+
             self.tableView.reloadData()
             
             
