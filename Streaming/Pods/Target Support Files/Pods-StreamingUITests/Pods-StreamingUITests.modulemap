@@ -1,6 +1,0 @@
-framework module Pods_StreamingUITests {
-  umbrella header "Pods-StreamingUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
