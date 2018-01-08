@@ -18,5 +18,6 @@ target 'Streaming' do
   end
 
 pod 'Alamofire', '~> 4.5'
-
+pod 'GoogleAPIClientForREST/YouTbue', '~> 1.2.1'
+pod 'Google/SignIn', '~> 3.0.3'
 end

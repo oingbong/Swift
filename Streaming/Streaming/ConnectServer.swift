@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 // 맥 -> 네트워크 -> ip 주소
-private let server = "http://172.30.22.137:3000"
+private let server = "http://172.30.23.45:3000"
 
 class ConnectServer{
     let url: String
